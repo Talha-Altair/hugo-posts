@@ -3,31 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/posts/kafka/</loc>
+    <loc>https://talha-altair.github.io/hugo-posts/posts/kafka/</loc>
     <lastmod>2021-06-12T12:58:07+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>https://talha-altair.github.io/hugo-posts/posts/</loc>
     <lastmod>2021-06-12T12:58:07+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://talha-altair.github.io/hugo-posts/</loc>
     <lastmod>2021-06-12T12:58:07+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/zufarielle/</loc>
+    <loc>https://talha-altair.github.io/hugo-posts/posts/zufarielle/</loc>
     <lastmod>2021-06-12T12:58:07+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://talha-altair.github.io/hugo-posts/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://talha-altair.github.io/hugo-posts/tags/</loc>
   </url>
   
 </urlset>
