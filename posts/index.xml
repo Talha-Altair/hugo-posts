@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Talha-Altair</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on Talha-Altair</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Jun 2021 12:58:07 +0530</lastBuildDate>
+    
+	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kafka</title>
+      <link>http://example.org/posts/kafka/</link>
+      <pubDate>Sat, 12 Jun 2021 12:58:07 +0530</pubDate>
+      
+      <guid>http://example.org/posts/kafka/</guid>
+      <description>Kafka Json Transfer A Simple App that instantiates a file data transfer between a local producer and a local consumer
+Running Tests Install dependencies:
+$ pip install -r requirements.txt Download Kafka Server Files https://kafka.apache.org/quickstart
+Change server.properties to localhost advertised listener
+Start Kafka server: $ JMX_PORT=8004 bin/kafka-server-start.sh config/server.properties Start Kafka Zookeeper: $ bin/zookeeper-server-start.sh config/zookeeper.properties Test message consumer: $ bin/kafka-console-consumer.sh --topic quickstart-events --bootstrap-server localhost:9092 Test message producer: $ bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092 Kafka Manager: git clone git@github.</description>
+    </item>
+    
+    <item>
+      <title>zufarielle</title>
+      <link>http://example.org/posts/zufarielle/</link>
+      <pubDate>Sat, 12 Jun 2021 12:58:07 +0530</pubDate>
+      
+      <guid>http://example.org/posts/zufarielle/</guid>
+      <description>aleatório - random portugsese zufällig - random german temere - latin
+zufarielle
+Origin: zufällig - random german aleatório - random portugsese abeille - Bee Francais
+5/22 5:22  bee - bite latvian - abeille Francais - bal arısı turkish - ape italiano - apis latin</description>
+    </item>
+    
+  </channel>
+</rss>

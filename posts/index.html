@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="http://example.org/assets/css/main.css"/>
+    <link rel="canonical" href="http://example.org/posts/">
+    <noscript><link rel="stylesheet" href="http://example.org/assets/css/noscript.css"/></noscript>
+    <style>
+        :root{--site-background : url("http://example.org/images/bg.jpg")};
+    </style> 
+    
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+
+<body class="is-preload">
+
+    
+        <div id="wrapper">
+
+            
+                <header id="header">
+                    <div class="logo">
+                        <a href="/">
+                            <span class="icon">
+                                <img src="">
+                            </span>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="inner">
+                            <h1>Posts</h1>
+                            
+                        </div>
+                    </div>
+                    <nav>
+                        <ul>
+                            
+                                
+                                    
+                                        <li>
+                                            <a href="#kafka">Kafka</a>
+                                        </li>
+                                    
+                                
+                            
+                                
+                                    
+                                        <li>
+                                            <a href="#zufarielle">zufarielle</a>
+                                        </li>
+                                    
+                                
+                            
+                        </ul>
+                    </nav>
+                </header>
+
+            
+                <div id="main">
+
+                    
+                        
+                            
+                                <article id="kafka">
+                                    <h2 class="major">Kafka</h2>
+                                    <span class="image main"><img src="" alt="" /></span>
+                                    <h1 id="kafka-json-transfer">Kafka Json Transfer</h1>
+<p>A Simple App that instantiates a file data transfer
+between a local producer and a local consumer</p>
+<h2 id="running-tests">Running Tests</h2>
+<p>Install dependencies:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ pip install -r requirements.txt
+</code></pre></div><h2 id="download-kafka-server-files">Download Kafka Server Files</h2>
+<p><a href="https://kafka.apache.org/quickstart">https://kafka.apache.org/quickstart</a></p>
+<p>Change server.properties to localhost advertised listener</p>
+<h2 id="start-kafka-server">Start Kafka server:</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ JMX_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">8004</span> bin/kafka-server-start.sh config/server.properties 
+</code></pre></div><h2 id="start-kafka-zookeeper">Start Kafka Zookeeper:</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ bin/zookeeper-server-start.sh config/zookeeper.properties
+</code></pre></div><h2 id="test-message-consumer">Test message consumer:</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ bin/kafka-console-consumer.sh --topic quickstart-events --bootstrap-server localhost:9092
+</code></pre></div><h2 id="test-message-producer">Test message producer:</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092 
+</code></pre></div><h2 id="kafka-manager">Kafka Manager:</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone git@github.com:yahoo/CMAK.git
+
+cd CMAK/target/universal/cmak-3.0.0.5 
+
+$ bin/cmak -Dconfig.file<span style="color:#f92672">=</span>conf/application.conf -Dhttp.port<span style="color:#f92672">=</span><span style="color:#ae81ff">8080</span>
+</code></pre></div>
+                                </article>
+                            
+                        
+                    
+                        
+                            
+                                <article id="zufarielle">
+                                    <h2 class="major">zufarielle</h2>
+                                    <span class="image main"><img src="" alt="" /></span>
+                                    <p>aleatório - random portugsese
+zufällig - random  german
+temere - latin</p>
+<p><em><strong>zufarielle</strong></em></p>
+<p>Origin:
+zufällig - random  german
+aleatório - random portugsese
+abeille - Bee Francais</p>
+<pre><code>5/22 5:22
+</code></pre>
+<p>bee - bite latvian
+- abeille Francais
+- bal arısı turkish
+- ape italiano
+- apis latin</p>
+
+                                </article>
+                            
+                        
+                    
+
+                </div>
+
+                
+<footer id="footer">
+    <p class="copyright">&copy; Design: <a href="https://github.com/d-asnaghi">d-asnaghi</a> and <a href="https://html5up.net">HTML5 UP</a>.</p>
+</footer>
+
+        </div>
+
+    
+    <div id="bg"></div>
+
+</body>
+
+
+    
+    <script src=http://example.org/assets/js/jquery.min.js></script>
+    <script src=http://example.org/assets/js/browser.min.js></script>
+    <script src=http://example.org/assets/js/breakpoints.min.js></script>
+    <script src=http://example.org/assets/js/util.js></script>
+    <script src=http://example.org/assets/js/main.js></script>
+
+</html>
