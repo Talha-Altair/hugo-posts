@@ -25,6 +25,15 @@ Start Kafka server: $ JMX_PORT=8004 bin/kafka-server-start.sh config/server.prop
     </item>
     
     <item>
+      <title>new_post-abc</title>
+      <link>https://talha-altair.github.io/hugo-posts/posts/some_new_post/</link>
+      <pubDate>Sat, 12 Jun 2021 12:58:07 +0530</pubDate>
+      
+      <guid>https://talha-altair.github.io/hugo-posts/posts/some_new_post/</guid>
+      <description>$hugo add something</description>
+    </item>
+    
+    <item>
       <title>zufarielle</title>
       <link>https://talha-altair.github.io/hugo-posts/posts/zufarielle/</link>
       <pubDate>Sat, 12 Jun 2021 12:58:07 +0530</pubDate>
@@ -33,7 +42,8 @@ Start Kafka server: $ JMX_PORT=8004 bin/kafka-server-start.sh config/server.prop
       <description>aleatório - random portugsese zufällig - random german temere - latin
 zufarielle
 Origin: zufällig - random german aleatório - random portugsese abeille - Bee Francais
-5/22 5:22  bee - bite latvian - abeille Francais - bal arısı turkish - ape italiano - apis latin</description>
+5/22 5:22  bee - bite latvian - abeille Francais - bal arısı turkish - ape italiano - apis latin
+add something</description>
     </item>
     
   </channel>
