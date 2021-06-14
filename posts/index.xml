@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Talha-Altair</title>
+    <title>Posts on Terminal</title>
     <link>https://talha-altair.github.io/hugo-posts/posts/</link>
-    <description>Recent content in Posts on Talha-Altair</description>
+    <description>Recent content in Posts on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Jun 2021 12:58:07 +0530</lastBuildDate>
-    
-	<atom:link href="https://talha-altair.github.io/hugo-posts/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 12 Jun 2021 12:58:07 +0530</lastBuildDate><atom:link href="https://talha-altair.github.io/hugo-posts/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kafka</title>
       <link>https://talha-altair.github.io/hugo-posts/posts/kafka/</link>
@@ -22,6 +18,30 @@ Running Tests Install dependencies:
 $ pip install -r requirements.txt Download Kafka Server Files https://kafka.apache.org/quickstart
 Change server.properties to localhost advertised listener
 Start Kafka server: $ JMX_PORT=8004 bin/kafka-server-start.sh config/server.properties Start Kafka Zookeeper: $ bin/zookeeper-server-start.sh config/zookeeper.properties Test message consumer: $ bin/kafka-console-consumer.sh --topic quickstart-events --bootstrap-server localhost:9092 Test message producer: $ bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092 Kafka Manager: git clone git@github.</description>
+      <content>&lt;h1 id=&#34;kafka-json-transfer&#34;&gt;Kafka Json Transfer&lt;/h1&gt;
+&lt;p&gt;A Simple App that instantiates a file data transfer
+between a local producer and a local consumer&lt;/p&gt;
+&lt;h2 id=&#34;running-tests&#34;&gt;Running Tests&lt;/h2&gt;
+&lt;p&gt;Install dependencies:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ pip install -r requirements.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;download-kafka-server-files&#34;&gt;Download Kafka Server Files&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://kafka.apache.org/quickstart&#34;&gt;https://kafka.apache.org/quickstart&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Change server.properties to localhost advertised listener&lt;/p&gt;
+&lt;h2 id=&#34;start-kafka-server&#34;&gt;Start Kafka server:&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ JMX_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8004&lt;/span&gt; bin/kafka-server-start.sh config/server.properties 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;start-kafka-zookeeper&#34;&gt;Start Kafka Zookeeper:&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ bin/zookeeper-server-start.sh config/zookeeper.properties
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;test-message-consumer&#34;&gt;Test message consumer:&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ bin/kafka-console-consumer.sh --topic quickstart-events --bootstrap-server localhost:9092
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;test-message-producer&#34;&gt;Test message producer:&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;kafka-manager&#34;&gt;Kafka Manager:&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone git@github.com:yahoo/CMAK.git
+
+cd CMAK/target/universal/cmak-3.0.0.5 
+
+$ bin/cmak -Dconfig.file&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;conf/application.conf -Dhttp.port&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8080&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
     </item>
     
     <item>
@@ -35,6 +55,23 @@ zufarielle
 Origin: zufällig - random german aleatório - random portugsese abeille - Bee Francais
 5/22 5:22  bee - bite latvian - abeille Francais - bal arısı turkish - ape italiano - apis latin
 add something</description>
+      <content>&lt;p&gt;aleatório - random portugsese
+zufällig - random  german
+temere - latin&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;zufarielle&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Origin:
+zufällig - random  german
+aleatório - random portugsese
+abeille - Bee Francais&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;5/22 5:22
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;bee - bite latvian
+- abeille Francais
+- bal arısı turkish
+- ape italiano
+- apis latin&lt;/p&gt;
+&lt;p&gt;add something&lt;/p&gt;
+</content>
     </item>
     
   </channel>

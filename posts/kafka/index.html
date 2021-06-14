@@ -1,58 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Kafka</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="https://talha-altair.github.io/hugo-posts/assets/css/main.css"/>
-    <link rel="canonical" href="https://talha-altair.github.io/hugo-posts/posts/kafka/">
-    <noscript><link rel="stylesheet" href="https://talha-altair.github.io/hugo-posts/assets/css/noscript.css"/></noscript>
-    <style>
-        :root{--site-background : url("https://talha-altair.github.io/hugo-posts/images/bg.jpg")};
-    </style> 
-    
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+    <title>Kafka :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kafka Json Transfer A Simple App that instantiates a file data transfer between a local producer and a local consumer
+Running Tests Install dependencies:
+$ pip install -r requirements.txt Download Kafka Server Files https://kafka.apache.org/quickstart
+Change server.properties to localhost advertised listener
+Start Kafka server: $ JMX_PORT=8004 bin/kafka-server-start.sh config/server.properties Start Kafka Zookeeper: $ bin/zookeeper-server-start.sh config/zookeeper.properties Test message consumer: $ bin/kafka-console-consumer.sh --topic quickstart-events --bootstrap-server localhost:9092 Test message producer: $ bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092 Kafka Manager: git clone git@github." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://talha-altair.github.io/hugo-posts/posts/kafka/" />
+
+
+
+
+<link rel="stylesheet" href="https://talha-altair.github.io/hugo-posts/assets/style.css">
+
+  <link rel="stylesheet" href="https://talha-altair.github.io/hugo-posts/assets/blue.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://talha-altair.github.io/hugo-posts/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://talha-altair.github.io/hugo-posts/img/favicon/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Kafka">
+<meta property="og:description" content="Kafka Json Transfer A Simple App that instantiates a file data transfer between a local producer and a local consumer
+Running Tests Install dependencies:
+$ pip install -r requirements.txt Download Kafka Server Files https://kafka.apache.org/quickstart
+Change server.properties to localhost advertised listener
+Start Kafka server: $ JMX_PORT=8004 bin/kafka-server-start.sh config/server.properties Start Kafka Zookeeper: $ bin/zookeeper-server-start.sh config/zookeeper.properties Test message consumer: $ bin/kafka-console-consumer.sh --topic quickstart-events --bootstrap-server localhost:9092 Test message producer: $ bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092 Kafka Manager: git clone git@github." />
+<meta property="og:url" content="https://talha-altair.github.io/hugo-posts/posts/kafka/" />
+<meta property="og:site_name" content="Terminal" />
+
+  
+    <meta property="og:image" content="https://talha-altair.github.io/hugo-posts/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2021-06-12 12:58:07 &#43;0530 IST" />
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
+<body class="blue">
 
 
-<body class="is-preload">
+<div class="container full headings--one-size">
 
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Altair
+  </div>
+</a>
+
+    </div>
     
-        <div id="wrapper">
+  </div>
+  
+</header>
 
-            
-                <header id="header">
-                    <div class="logo">
-                        <span class="icon fa-gem"></span>
-                    </div>
-                    <div class="content">
-                        <div class="inner">
-                            <h1><a href="/hugo-posts/">Go Home</a></h1>
-                            <p>
-                                Nothing to see here
-                            </p>
-                        </div>
-                    </div>
-                </header>
 
-                
-<footer id="footer">
-    <p class="copyright">&copy; Design: <a href="https://github.com/d-asnaghi">d-asnaghi</a> and <a href="https://html5up.net">HTML5 UP</a>.</p>
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://talha-altair.github.io/hugo-posts/posts/kafka/">Kafka</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2021-06-12 
+      </span>
+    
+    
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="kafka-json-transfer">Kafka Json Transfer<a href="#kafka-json-transfer" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>A Simple App that instantiates a file data transfer
+between a local producer and a local consumer</p>
+<h2 id="running-tests">Running Tests<a href="#running-tests" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Install dependencies:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ pip install -r requirements.txt
+</code></pre></div><h2 id="download-kafka-server-files">Download Kafka Server Files<a href="#download-kafka-server-files" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><a href="https://kafka.apache.org/quickstart">https://kafka.apache.org/quickstart</a></p>
+<p>Change server.properties to localhost advertised listener</p>
+<h2 id="start-kafka-server">Start Kafka server:<a href="#start-kafka-server" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ JMX_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">8004</span> bin/kafka-server-start.sh config/server.properties 
+</code></pre></div><h2 id="start-kafka-zookeeper">Start Kafka Zookeeper:<a href="#start-kafka-zookeeper" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ bin/zookeeper-server-start.sh config/zookeeper.properties
+</code></pre></div><h2 id="test-message-consumer">Test message consumer:<a href="#test-message-consumer" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ bin/kafka-console-consumer.sh --topic quickstart-events --bootstrap-server localhost:9092
+</code></pre></div><h2 id="test-message-producer">Test message producer:<a href="#test-message-producer" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092 
+</code></pre></div><h2 id="kafka-manager">Kafka Manager:<a href="#kafka-manager" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone git@github.com:yahoo/CMAK.git
+
+cd CMAK/target/universal/cmak-3.0.0.5 
+
+$ bin/cmak -Dconfig.file<span style="color:#f92672">=</span>conf/application.conf -Dhttp.port<span style="color:#f92672">=</span><span style="color:#ae81ff">8080</span>
+</code></pre></div>
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="https://talha-altair.github.io/hugo-posts/posts/zufarielle/">
+                <span class="button__text">zufarielle</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2021 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
 </footer>
 
-        </div>
+<script src="https://talha-altair.github.io/hugo-posts/assets/main.js"></script>
+<script src="https://talha-altair.github.io/hugo-posts/assets/prism.js"></script>
 
-    
-    <div id="bg"></div>
+
+
+
+
+
+
+  
+</div>
 
 </body>
-
-
-    
-    <script src=https://talha-altair.github.io/hugo-posts/assets/js/jquery.min.js></script>
-    <script src=https://talha-altair.github.io/hugo-posts/assets/js/browser.min.js></script>
-    <script src=https://talha-altair.github.io/hugo-posts/assets/js/breakpoints.min.js></script>
-    <script src=https://talha-altair.github.io/hugo-posts/assets/js/util.js></script>
-    <script src=https://talha-altair.github.io/hugo-posts/assets/js/main.js></script>
-
 </html>
